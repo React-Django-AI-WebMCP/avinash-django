@@ -2,7 +2,7 @@
 
 ### Time Tracker — Calendar Entries (Day View)
 
-> **Source:** Figma file `02.1 Time Tracker — Nexus` · Node `12568:210659`
+> **Source:** Figma link `https://www.figma.com/design/4Qf2rnpZ0qrOpR6vilPUQ3/02.1-Time-Tracker---Nexus?node-id=12568-210659&m=dev` . Figma file `02.1 Time Tracker — Nexus` · Node `12568:210659`
 > **Status:** Ready to Review · 11 June 2025 · Hardik
 
 ---
@@ -108,11 +108,11 @@ This screen is the **Calendar tab** of the Time Tracking module. It shows the cu
 
 In the **"My Calendars"** legend, user checks or unchecks one of the three checkboxes:
 
-| Checkbox | Checked | Unchecked |
-|---|---|---|
-| **Mentioned Entries** | Dashed-border entries appear on calendar | Hidden |
-| **Integrated Calendar Entries** | Integrated calendar events appear | Hidden |
-| **Logged Entries** | Solid colored entry blocks appear | Hidden |
+| Checkbox                        | Checked                                  | Unchecked |
+| ------------------------------- | ---------------------------------------- | --------- |
+| **Mentioned Entries**           | Dashed-border entries appear on calendar | Hidden    |
+| **Integrated Calendar Entries** | Integrated calendar events appear        | Hidden    |
+| **Logged Entries**              | Solid colored entry blocks appear        | Hidden    |
 
 - The calendar **immediately** reflects the change by showing or hiding the corresponding entry type
 
@@ -153,11 +153,11 @@ In the **"My Calendars"** legend, user checks or unchecks one of the three check
 
 **Entry types and their visual treatment:**
 
-| Entry Type | Visual Style | Content Shown | Notes |
-|---|---|---|---|
-| **Logged Entries** | Solid filled block, project-colored | Title + duration (e.g. "Daily Scrum / 00:45 hrs") | Some show an avatar icon and a "+" icon |
-| **Mentioned Entries** | Dashed border, thin horizontal bar | Title only (e.g. "Quick Sync") | Lighter/muted appearance |
-| **Integrated Calendar Entries** | Gray/neutral block | Title + duration (e.g. "Review meeting / 01:00 hrs") | Can overlap each other |
+| Entry Type                      | Visual Style                        | Content Shown                                        | Notes                                   |
+| ------------------------------- | ----------------------------------- | ---------------------------------------------------- | --------------------------------------- |
+| **Logged Entries**              | Solid filled block, project-colored | Title + duration (e.g. "Daily Scrum / 00:45 hrs")    | Some show an avatar icon and a "+" icon |
+| **Mentioned Entries**           | Dashed border, thin horizontal bar  | Title only (e.g. "Quick Sync")                       | Lighter/muted appearance                |
+| **Integrated Calendar Entries** | Gray/neutral block                  | Title + duration (e.g. "Review meeting / 01:00 hrs") | Can overlap each other                  |
 
 - Visibility of all three types is controlled independently via the **"My Calendars"** checkboxes (see Action 9)
 
@@ -181,38 +181,38 @@ In the **"My Calendars"** legend, user checks or unchecks one of the three check
 
 ### 3.1 Screen Identification
 
-| Property | Value |
-|---|---|
+| Property            | Value                       |
+| ------------------- | --------------------------- |
 | **Figma Node Name** | Calendar Entries: 13th june |
-| **Node ID** | `12568:210659` |
-| **Figma File** | 02.1 Time Tracker — Nexus |
+| **Node ID**         | `12568:210659`              |
+| **Figma File**      | 02.1 Time Tracker — Nexus   |
 
 **Key sub-frames documented:**
 
-| Frame Name | Node ID | Purpose |
-|---|---|---|
-| Customise ✅ | `8484:104358` | Calendar view default states + visibility toggle states |
-| Calendar: Day view (State 1) | `13516:172354` | Default — all logged + integrated entries visible |
-| Calendar: Day view (State 2) | `12942:76486` | Tooltip state on "Logged Entries" info icon |
-| Calendar: Day view (State 3) | `12942:76221` | Mentioned Entries unchecked, Logged Entries unchecked |
-| Calendar: Day view (State 4) | `12942:76397` | Mentioned Entries checked, Logged Entries unchecked |
-| Adding entries through dragging | `10755:194860` | Full drag-to-log flow (Day + Week view) |
-| Day view — Default (empty) | `10755:194864` | Calendar with no entries; Project Tasks open |
-| Day view — Task Hover | `12860:167464` | Project task expanded, hover state |
-| Day view — Task Pressed/Dragging | `12860:177089` | Drag in progress, floating task card |
-| Day view — Add Entry (empty) | `10755:195196` | "Add Entry" sidecar, empty form |
-| Day view — Add Entry (filled) | `13461:79628` | "Add Entry" sidecar, Feature dropdown open |
-| Day view — Add Entry (confirm) | `13580:84514` | "Add Entry" sidecar, all fields filled, Add active |
-| Day view — Entry Added | `10755:195451` | Post-add state, "Entry Added" toast shown |
+| Frame Name                       | Node ID        | Purpose                                                 |
+| -------------------------------- | -------------- | ------------------------------------------------------- |
+| Customise ✅                     | `8484:104358`  | Calendar view default states + visibility toggle states |
+| Calendar: Day view (State 1)     | `13516:172354` | Default — all logged + integrated entries visible       |
+| Calendar: Day view (State 2)     | `12942:76486`  | Tooltip state on "Logged Entries" info icon             |
+| Calendar: Day view (State 3)     | `12942:76221`  | Mentioned Entries unchecked, Logged Entries unchecked   |
+| Calendar: Day view (State 4)     | `12942:76397`  | Mentioned Entries checked, Logged Entries unchecked     |
+| Adding entries through dragging  | `10755:194860` | Full drag-to-log flow (Day + Week view)                 |
+| Day view — Default (empty)       | `10755:194864` | Calendar with no entries; Project Tasks open            |
+| Day view — Task Hover            | `12860:167464` | Project task expanded, hover state                      |
+| Day view — Task Pressed/Dragging | `12860:177089` | Drag in progress, floating task card                    |
+| Day view — Add Entry (empty)     | `10755:195196` | "Add Entry" sidecar, empty form                         |
+| Day view — Add Entry (filled)    | `13461:79628`  | "Add Entry" sidecar, Feature dropdown open              |
+| Day view — Add Entry (confirm)   | `13580:84514`  | "Add Entry" sidecar, all fields filled, Add active      |
+| Day view — Entry Added           | `10755:195451` | Post-add state, "Entry Added" toast shown               |
 
 ---
 
 ### 3.2 UI Behavior References (Visual Only)
 
-| Element | Reference |
-|---|---|
-| Calendar grid | FullCalendar (day view layout) |
-| Date picker | React DatePicker |
+| Element        | Reference                                         |
+| -------------- | ------------------------------------------------- |
+| Calendar grid  | FullCalendar (day view layout)                    |
+| Date picker    | React DatePicker                                  |
 | Sidecar/Drawer | Right-side panel that slides in over the calendar |
 
 ---
@@ -234,12 +234,12 @@ In the **"My Calendars"** legend, user checks or unchecks one of the three check
 └──────┴──────────────┴───────────────────────────────┴───────────────────┘
 ```
 
-| Region | Width | Description |
-|---|---|---|
-| Left navigation bar | 60px | Icon-only vertical nav; Time tracking icon highlighted |
-| Page header | full width, 100px tall | Title, tabs, weekly log, day strip, date picker |
-| Calendar content | ~1039px | Time labels column (48px) + event grid (991px) |
-| Project Tasks panel | 293px | Accordion list + "My Calendars" legend at bottom |
+| Region              | Width                  | Description                                            |
+| ------------------- | ---------------------- | ------------------------------------------------------ |
+| Left navigation bar | 60px                   | Icon-only vertical nav; Time tracking icon highlighted |
+| Page header         | full width, 100px tall | Title, tabs, weekly log, day strip, date picker        |
+| Calendar content    | ~1039px                | Time labels column (48px) + event grid (991px)         |
+| Project Tasks panel | 293px                  | Accordion list + "My Calendars" legend at bottom       |
 
 ---
 
@@ -247,21 +247,21 @@ In the **"My Calendars"** legend, user checks or unchecks one of the three check
 
 #### Page Header
 
-| Element | Content |
-|---|---|
-| Title | "Time tracking" (bold, large) |
-| Tabs | "Logged" \| **"Calendar"** (Calendar = active, filled state) |
-| Weekly log | "Week's log: **32:30 hrs**" |
-| Day strip | S · M · T · **W** · T · S · S with left/right chevron arrows; current day highlighted with a circle |
-| Date display | Calendar icon + "19 May 2025" (clickable → opens date picker) |
+| Element      | Content                                                                                             |
+| ------------ | --------------------------------------------------------------------------------------------------- |
+| Title        | "Time tracking" (bold, large)                                                                       |
+| Tabs         | "Logged" \| **"Calendar"** (Calendar = active, filled state)                                        |
+| Weekly log   | "Week's log: **32:30 hrs**"                                                                         |
+| Day strip    | S · M · T · **W** · T · S · S with left/right chevron arrows; current day highlighted with a circle |
+| Date display | Calendar icon + "19 May 2025" (clickable → opens date picker)                                       |
 
 #### Calendar Sub-header
 
-| Element | Content |
-|---|---|
-| Label | "Today" (left-aligned) |
+| Element     | Content                        |
+| ----------- | ------------------------------ |
+| Label       | "Today" (left-aligned)         |
 | View toggle | "Day" \| pill switch \| "Week" |
-| Day total | "08:24 hrs" (right-aligned) |
+| Day total   | "08:24 hrs" (right-aligned)    |
 
 #### Time Grid
 
@@ -271,27 +271,27 @@ In the **"My Calendars"** legend, user checks or unchecks one of the three check
 
 #### Calendar Entries — Logged Entries (solid blocks)
 
-| Entry Title | Fill Color | Duration | Extra |
-|---|---|---|---|
-| "Daily Scrum" | Blue/teal | 00:45 hrs | — |
-| "Design System planning" | Purple/lavender | 02:00 hrs | — |
-| "Feedback Session" | Teal | 00:30 hrs | Avatar icon + "+" icon |
-| "Project Planning Call" | Blue | 00:45 hrs | Avatar icon + "+" icon |
-| "Day End Scrum" | Blue | 00:30 hrs | Avatar icon + "+" icon |
+| Entry Title              | Fill Color      | Duration  | Extra                  |
+| ------------------------ | --------------- | --------- | ---------------------- |
+| "Daily Scrum"            | Blue/teal       | 00:45 hrs | —                      |
+| "Design System planning" | Purple/lavender | 02:00 hrs | —                      |
+| "Feedback Session"       | Teal            | 00:30 hrs | Avatar icon + "+" icon |
+| "Project Planning Call"  | Blue            | 00:45 hrs | Avatar icon + "+" icon |
+| "Day End Scrum"          | Blue            | 00:30 hrs | Avatar icon + "+" icon |
 
 #### Calendar Entries — Mentioned Entries (dashed/thin)
 
-| Entry Title | Appearance |
-|---|---|
-| "Quick Sync" | Thin yellow/gold dashed horizontal bar, single-line title |
+| Entry Title   | Appearance                                                         |
+| ------------- | ------------------------------------------------------------------ |
+| "Quick Sync"  | Thin yellow/gold dashed horizontal bar, single-line title          |
 | "Review call" | Thin dashed horizontal bar (appears below Quick Sync at same time) |
 
 #### Calendar Entries — Integrated Calendar Entries (neutral)
 
-| Entry Title | Appearance | Duration |
-|---|---|---|
-| "Review meeting" | Gray/neutral block | 01:00 hrs |
-| "Internal Sync Discussion" | Gray/neutral dashed block (overlaps with Review meeting) | — |
+| Entry Title                | Appearance                                               | Duration  |
+| -------------------------- | -------------------------------------------------------- | --------- |
+| "Review meeting"           | Gray/neutral block                                       | 01:00 hrs |
+| "Internal Sync Discussion" | Gray/neutral dashed block (overlaps with Review meeting) | —         |
 
 #### Project Tasks Panel — Header
 
@@ -312,11 +312,11 @@ Each row contains:
 
 #### Project Tasks Panel — My Calendars Legend
 
-| Row | Swatch Icon | Label | Interactive Element |
-|---|---|---|---|
-| 1 | Dashed/unfilled square | "Mentioned Entries" | Checkbox |
-| 2 | Blue filled square | "Integrated Calendar Entries" | Checkbox |
-| 3 | Gray/outlined square | "Logged Entries" + ⓘ | Checkbox |
+| Row | Swatch Icon            | Label                         | Interactive Element |
+| --- | ---------------------- | ----------------------------- | ------------------- |
+| 1   | Dashed/unfilled square | "Mentioned Entries"           | Checkbox            |
+| 2   | Blue filled square     | "Integrated Calendar Entries" | Checkbox            |
+| 3   | Gray/outlined square   | "Logged Entries" + ⓘ          | Checkbox            |
 
 - **ⓘ tooltip text:** "The color of logged entries will depend on the project color."
 
@@ -336,17 +336,17 @@ Each row contains:
 
 #### "Add Entry" Sidecar Panel
 
-| Field | Label | Placeholder / State |
-|---|---|---|
-| Text input | **Description** | "Write a project description" + avatar icon (right edge) |
-| Dropdown | **Project : Task** | Pre-filled from dragged task (e.g. "Nexus : Design") |
-| Dropdown | **Feature** | "Select feature" — options shown: Log-in, Dashboard, Action Card, Sign-up |
-| Toggle button | **Billable** | $ icon — inactive (white bg) / active (green bg) |
-| Time range | **Time** | Start `00:00` — End `00:00` — Duration `00:00` |
-| Date picker | **Select Date** | Calendar icon + `DD-Month-YYYY` |
-| Action buttons | — | **"Reset"** (secondary) · **"Add"** (primary — grayed out when empty, blue when active) |
-| Close | — | **"×"** icon top-right of panel |
-| Panel title | — | **"Add Entry"** |
+| Field          | Label              | Placeholder / State                                                                     |
+| -------------- | ------------------ | --------------------------------------------------------------------------------------- |
+| Text input     | **Description**    | "Write a project description" + avatar icon (right edge)                                |
+| Dropdown       | **Project : Task** | Pre-filled from dragged task (e.g. "Nexus : Design")                                    |
+| Dropdown       | **Feature**        | "Select feature" — options shown: Log-in, Dashboard, Action Card, Sign-up               |
+| Toggle button  | **Billable**       | $ icon — inactive (white bg) / active (green bg)                                        |
+| Time range     | **Time**           | Start `00:00` — End `00:00` — Duration `00:00`                                          |
+| Date picker    | **Select Date**    | Calendar icon + `DD-Month-YYYY`                                                         |
+| Action buttons | —                  | **"Reset"** (secondary) · **"Add"** (primary — grayed out when empty, blue when active) |
+| Close          | —                  | **"×"** icon top-right of panel                                                         |
+| Panel title    | —                  | **"Add Entry"**                                                                         |
 
 #### "Entry Added" Toast
 
@@ -366,49 +366,49 @@ Each row contains:
 
 Interactions explicitly visible in Figma:
 
-| # | Interaction | Trigger | Result |
-|---|---|---|---|
-| 1 | Logged / Calendar tab toggle | Click "Logged" or "Calendar" tab | Switches between logged list and calendar views |
-| 2 | Day/Week view toggle | Click "Day" or "Week" pill | Calendar grid changes layout |
-| 3 | Day navigation | Click chevron arrows or day letter in strip | Calendar moves to selected day; letter highlights |
-| 4 | Date picker open | Click date display | Calendar date picker overlay opens |
-| 5 | Project accordion expand/collapse | Click project row | Reveals or hides task list; chevron reflects state |
-| 6 | Task hover | Mouse over task item | Item enters hover state |
-| 7 | Task press | Press/hold task item | Floating drag card appears with grab cursor |
-| 8 | Task drop on calendar | Release on time slot | Calendar dims; "Add Entry" sidecar slides in from right |
-| 9 | Description input | Type in Description field | Field populates |
-| 10 | Feature dropdown | Click Feature field | Dropdown opens with list of features; click to select |
-| 11 | Billable toggle | Click $ button | Toggles between white (inactive) and green (active) |
-| 12 | Time field edit | Click/type in Time fields | Start, end, duration values update |
-| 13 | Date field | Click Select Date field | Date picker opens |
-| 14 | Reset form | Click "Reset" | All fields clear to placeholder state |
-| 15 | Submit form | Click "Add" (active state) | Entry saved; sidecar closes; "Entry Added" toast shown |
-| 16 | Dismiss sidecar | Click "×" | Sidecar closes; no entry created; calendar un-dims |
-| 17 | Entry visibility toggle | Check/uncheck My Calendars checkbox | Corresponding entry type shows or hides immediately |
-| 18 | Info icon hover | Hover ⓘ next to "Logged Entries" | Tooltip: "The color of logged entries will depend on the project color." |
-| 19 | Calendar scroll | Drag scrollbar or scroll within grid | Scrolls time grid vertically |
+| #   | Interaction                       | Trigger                                     | Result                                                                   |
+| --- | --------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------ |
+| 1   | Logged / Calendar tab toggle      | Click "Logged" or "Calendar" tab            | Switches between logged list and calendar views                          |
+| 2   | Day/Week view toggle              | Click "Day" or "Week" pill                  | Calendar grid changes layout                                             |
+| 3   | Day navigation                    | Click chevron arrows or day letter in strip | Calendar moves to selected day; letter highlights                        |
+| 4   | Date picker open                  | Click date display                          | Calendar date picker overlay opens                                       |
+| 5   | Project accordion expand/collapse | Click project row                           | Reveals or hides task list; chevron reflects state                       |
+| 6   | Task hover                        | Mouse over task item                        | Item enters hover state                                                  |
+| 7   | Task press                        | Press/hold task item                        | Floating drag card appears with grab cursor                              |
+| 8   | Task drop on calendar             | Release on time slot                        | Calendar dims; "Add Entry" sidecar slides in from right                  |
+| 9   | Description input                 | Type in Description field                   | Field populates                                                          |
+| 10  | Feature dropdown                  | Click Feature field                         | Dropdown opens with list of features; click to select                    |
+| 11  | Billable toggle                   | Click $ button                              | Toggles between white (inactive) and green (active)                      |
+| 12  | Time field edit                   | Click/type in Time fields                   | Start, end, duration values update                                       |
+| 13  | Date field                        | Click Select Date field                     | Date picker opens                                                        |
+| 14  | Reset form                        | Click "Reset"                               | All fields clear to placeholder state                                    |
+| 15  | Submit form                       | Click "Add" (active state)                  | Entry saved; sidecar closes; "Entry Added" toast shown                   |
+| 16  | Dismiss sidecar                   | Click "×"                                   | Sidecar closes; no entry created; calendar un-dims                       |
+| 17  | Entry visibility toggle           | Check/uncheck My Calendars checkbox         | Corresponding entry type shows or hides immediately                      |
+| 18  | Info icon hover                   | Hover ⓘ next to "Logged Entries"            | Tooltip: "The color of logged entries will depend on the project color." |
+| 19  | Calendar scroll                   | Drag scrollbar or scroll within grid        | Scrolls time grid vertically                                             |
 
 ---
 
 ### 3.6 Component Mapping
 
-| UI Element | Design System Component |
-|---|---|
-| Page header | `PageHeaderComplex - type 2` / `type 3` / `type 9` |
-| Left navigation | `Navigation` |
-| Calendar grid row | `TableCell` |
-| Calendar sub-header | `SectionHeader - type 2` |
-| Project task accordion | `_customAccordion` |
-| Project task menu item | `MenuItem - simple` |
-| Logged/Calendar tab buttons | `Buttons - Simple` |
-| Calendar entry overlay | `ActionCardSimple` |
-| Right sidecar panel | `Sidecar - 002` |
-| Checkboxes | `CheckBox` |
-| Mentioned Entries icon | `Component 10` |
-| Integrated/Logged Entries icon | `_Component 9` |
-| Tooltip | `Tooltip - Simple` |
-| Context menu dropdown | `ProjectTasks 1.3` |
-| Scrollbar | `Scrollbar` |
+| UI Element                     | Design System Component                            |
+| ------------------------------ | -------------------------------------------------- |
+| Page header                    | `PageHeaderComplex - type 2` / `type 3` / `type 9` |
+| Left navigation                | `Navigation`                                       |
+| Calendar grid row              | `TableCell`                                        |
+| Calendar sub-header            | `SectionHeader - type 2`                           |
+| Project task accordion         | `_customAccordion`                                 |
+| Project task menu item         | `MenuItem - simple`                                |
+| Logged/Calendar tab buttons    | `Buttons - Simple`                                 |
+| Calendar entry overlay         | `ActionCardSimple`                                 |
+| Right sidecar panel            | `Sidecar - 002`                                    |
+| Checkboxes                     | `CheckBox`                                         |
+| Mentioned Entries icon         | `Component 10`                                     |
+| Integrated/Logged Entries icon | `_Component 9`                                     |
+| Tooltip                        | `Tooltip - Simple`                                 |
+| Context menu dropdown          | `ProjectTasks 1.3`                                 |
+| Scrollbar                      | `Scrollbar`                                        |
 
 ---
 
@@ -416,23 +416,23 @@ Interactions explicitly visible in Figma:
 
 The following items are **ambiguous or absent** in the Figma source. They must be resolved before implementation.
 
-| # | Topic | Gap |
-|---|---|---|
-| 1 | **Edit flow** | No click-on-entry interaction is shown. It is unknown whether clicking an existing entry opens an edit panel, and what fields would be editable. |
-| 2 | **Delete flow** | No deletion confirmation or action is shown for any entry type in this section. |
-| 3 | **"+" icon on logged entries** | Appears on Feedback Session, Project Planning Call, Day End Scrum. Its function is not shown. |
-| 4 | **Avatar icon on logged entries** | Small circular avatar icon visible on some entries. Its meaning and interactivity are not shown. |
-| 5 | **Context menu trigger** | The floating dropdown on project task items — not clear if it appears on right-click, long press, or a specific button click. |
-| 6 | **Context menu item labels** | The three sub-items in the `ProjectTasks 1.3` dropdown are not legible at screenshot resolution. |
-| 7 | **Mentioned → Logged conversion** | Whether a user can directly convert a "Mentioned Entry" into a "Logged Entry" by interacting with the calendar card is not shown. |
-| 8 | **Pin icon behavior** | Pin icon appears next to an expanded project's chevron and on one task ("Connect"). Its function is not shown. |
-| 9 | **"Logged" tab content** | Behavior and content of the "Logged" tab is out of scope for this Figma section. |
-| 10 | **Week view parity** | The "Week view" flow is referenced but not fully documented here — confirm whether the same drag-to-add behavior applies identically. |
-| 11 | **Empty calendar state** | The blank grid is shown when no entries exist, but no empty-state guidance text or CTA is visible. |
-| 12 | **Filter icon in Project Tasks header** | The icon at the top right of the "Project tasks" header — its function (filter, reorder, etc.) is not shown. |
-| 13 | **Ownership scope** | Not clear whether Project Tasks panel and calendar entries are scoped to the current user only, or include teammates' data. |
-| 14 | **Entry type swatch icons** | `Component 10` (Mentioned Entries) differs visually from `_Component 9` (Integrated/Logged). Exact color/pattern distinction is not fully legible — confirm design system intent. |
-| 15 | **Time auto-calculation** | Whether the duration field auto-calculates when start/end are set, and whether start/end are pre-filled from the drop position, is not explicitly shown. |
+| #   | Topic                                   | Gap                                                                                                                                                                               |
+| --- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | **Edit flow**                           | No click-on-entry interaction is shown. It is unknown whether clicking an existing entry opens an edit panel, and what fields would be editable.                                  |
+| 2   | **Delete flow**                         | No deletion confirmation or action is shown for any entry type in this section.                                                                                                   |
+| 3   | **"+" icon on logged entries**          | Appears on Feedback Session, Project Planning Call, Day End Scrum. Its function is not shown.                                                                                     |
+| 4   | **Avatar icon on logged entries**       | Small circular avatar icon visible on some entries. Its meaning and interactivity are not shown.                                                                                  |
+| 5   | **Context menu trigger**                | The floating dropdown on project task items — not clear if it appears on right-click, long press, or a specific button click.                                                     |
+| 6   | **Context menu item labels**            | The three sub-items in the `ProjectTasks 1.3` dropdown are not legible at screenshot resolution.                                                                                  |
+| 7   | **Mentioned → Logged conversion**       | Whether a user can directly convert a "Mentioned Entry" into a "Logged Entry" by interacting with the calendar card is not shown.                                                 |
+| 8   | **Pin icon behavior**                   | Pin icon appears next to an expanded project's chevron and on one task ("Connect"). Its function is not shown.                                                                    |
+| 9   | **"Logged" tab content**                | Behavior and content of the "Logged" tab is out of scope for this Figma section.                                                                                                  |
+| 10  | **Week view parity**                    | The "Week view" flow is referenced but not fully documented here — confirm whether the same drag-to-add behavior applies identically.                                             |
+| 11  | **Empty calendar state**                | The blank grid is shown when no entries exist, but no empty-state guidance text or CTA is visible.                                                                                |
+| 12  | **Filter icon in Project Tasks header** | The icon at the top right of the "Project tasks" header — its function (filter, reorder, etc.) is not shown.                                                                      |
+| 13  | **Ownership scope**                     | Not clear whether Project Tasks panel and calendar entries are scoped to the current user only, or include teammates' data.                                                       |
+| 14  | **Entry type swatch icons**             | `Component 10` (Mentioned Entries) differs visually from `_Component 9` (Integrated/Logged). Exact color/pattern distinction is not fully legible — confirm design system intent. |
+| 15  | **Time auto-calculation**               | Whether the duration field auto-calculates when start/end are set, and whether start/end are pre-filled from the drop position, is not explicitly shown.                          |
 
 ---
 

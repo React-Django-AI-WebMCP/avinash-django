@@ -1,0 +1,141 @@
+{
+  "info": {
+    "name": "Time Tracker — US-1 Calendar APIs",
+    "description": "US-1: Calendar week summary, day summary, and entries. Technical Document: backend/docs/US-1-technical-spec.md",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000"
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "GET Week summary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/time-tracking/calendar/week-summary/?date=2025-05-19",
+          "host": ["{{base_url}}"],
+          "path": ["api", "time-tracking", "calendar", "week-summary", ""],
+          "query": [
+            {
+              "key": "date",
+              "value": "2025-05-19",
+              "description": "YYYY-MM-DD"
+            }
+          ]
+        },
+        "description": "Total duration for the week (Monday–Sunday) containing the given date. Response: success, message, data { total_minutes, total_duration \"HH:MM\" }."
+      }
+    },
+    {
+      "name": "GET Day summary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/time-tracking/calendar/day-summary/?date=2025-05-19",
+          "host": ["{{base_url}}"],
+          "path": ["api", "time-tracking", "calendar", "day-summary", ""],
+          "query": [
+            {
+              "key": "date",
+              "value": "2025-05-19",
+              "description": "YYYY-MM-DD"
+            }
+          ]
+        },
+        "description": "Total duration for the given day. Response: success, message, data { total_minutes, total_duration \"HH:MM\" }."
+      }
+    },
+    {
+      "name": "GET Calendar entries (day)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/time-tracking/calendar/entries/?date=2025-05-19&view=day",
+          "host": ["{{base_url}}"],
+          "path": ["api", "time-tracking", "calendar", "entries", ""],
+          "query": [
+            {
+              "key": "date",
+              "value": "2025-05-19",
+              "description": "YYYY-MM-DD"
+            },
+            {
+              "key": "view",
+              "value": "day",
+              "description": "day | week"
+            }
+          ]
+        },
+        "description": "Entries for the given day. Response: success, message, data { entries: [ { id, title, start_time, end_time, duration, entry_type, project_color } ] }."
+      }
+    },
+    {
+      "name": "GET Calendar entries (week)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/time-tracking/calendar/entries/?date=2025-05-19&view=week",
+          "host": ["{{base_url}}"],
+          "path": ["api", "time-tracking", "calendar", "entries", ""],
+          "query": [
+            {
+              "key": "date",
+              "value": "2025-05-19",
+              "description": "YYYY-MM-DD"
+            },
+            {
+              "key": "view",
+              "value": "week",
+              "description": "day | week"
+            }
+          ]
+        },
+        "description": "Entries for the week (Mon–Sun) containing the given date. Response: success, message, data { entries: [...] }."
+      }
+    },
+    {
+      "name": "GET Week summary (no auth — expect 401)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/time-tracking/calendar/week-summary/?date=2025-05-19",
+          "host": ["{{base_url}}"],
+          "path": ["api", "time-tracking", "calendar", "week-summary", ""],
+          "query": [
+            {
+              "key": "date",
+              "value": "2025-05-19"
+            }
+          ]
+        },
+        "auth": {
+          "type": "noauth"
+        },
+        "description": "Call without Bearer token to confirm 401 Unauthorized."
+      }
+    }
+  ]
+}
